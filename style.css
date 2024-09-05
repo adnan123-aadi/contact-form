@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #f3f3EE;
+}
+
+#contact-form{
+    width: 500px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+#contact-form .input-group{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 20px 0px;
+gap: 20px;
+}
+#contact-form .input-group .label{
+    font-weight: 200;
+    font-family: "Sleil Light";
+}
+.input-field input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #2357C7;
+    margin-top: 20px;
+}
+.input-group .input-field-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.textarea-container{
+    width: 100%;
+}
+.textarea-container textarea{
+    width: 100%;
+    border: 1.5px solid #41403F;
+    background: transparent;
+    outline: #41403F;
+    padding: 30px;
+    height: 154px;
+    text-decoration: underline;
+    text-decoration-color: #2357C7;
+    line-height: 25px;resize: none;
+    overflow: hidden;
+}
+
+.btn {
+    position: absolute;
+    bottom: -80px;
+    right: -25px;
+    width: 127px;
+    height: 155px;
+    border: 1px solid #41403F;
+    border-radius: 90px;
+    background-color: #f3f3EE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    outline: 1px solid #41403F;
+    outline-offset:2px;
+    font-family: "Soleil";
+}
+
+.btn .send-text{
+    position: relative;
+
+}
+.btn .send-text::after{
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    width: 9px;
+    transform: translate(-50%,-50%);
+    height: 1px;
+    left: 50%;
+    background-color: #2357C7;
+}
+
+.btn .envoyer-text{
+color: #2357C7;
+
+}
+
+.btn .email-text{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+@media screen and (max-width:768px){
+    #contact-form{
+        width: 100%;
+    }
+        #contact-form .input-group{
+            flex-direction: column;
+        }
+        .main-section{
+            width: 100%;
+        }
+        .input-group .input-field-container{
+            width: 100%;
+            justify-content: start;
+            gap:40px;
+        }    .input-group .input-field-container .label{
+            width: 30px;
+        }
+        .btn{
+        border-radius: 50px;
+            bottom: -45px;
+            right: 8px;
+            height: 113px;
+            width: 92px;
+        }
+}
